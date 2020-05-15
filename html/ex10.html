@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서연습10-css 속성</title>
+    <style>
+    .tit1 { font-size: 40px;} 
+    </style>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <h2 class="tit1">Css 속성</h2>
+    <p>선택자 { 속성명:값; }</p>
+    <hr>
+    <h3 class="tit2">CSS 참조 방식</h3>
+    <p> 내부스타일 방식 : 해당 문서에 style요소로 스타일을 지정 </p>
+    <p> 외부스타일 방식 : link 요소로 별도의 .css파일을
+        연결하여 지정하는 방식 (가급적이면 외부스타일로)</p>
+    <p> 인라인스타일 방식 : 스타일을 지정하는 요소에 직접 스타일을 입력</p>
+    <h3 style="font-size: 32px; color: red;">css 속성의 단위</h3>
+    <p>색상단위 : 키워드, 16진코드(#f00, #ff0000), rgb(0~255,0~255,0~255)
+        , hsl(색_각도,채도_백분율, 명도_백분율), rgba(0~255,0~255,0~255,0~1)
+        , hsla(색_각도,채도_백분율, 명도_백분율, 0~1 투명도)
+    </p>
+    <p>크기단위 : px, pt, %, em, vh, vw</p>
+    <p>각도단위 : deg</p>
+    <p>시간/속도 단위 : s, ms, h, m</p>
+    <p>url 단위 : url("파일 이름 및 경로")</p>
+    <hr>
+    <h3 class="tit2">폰트이름 관련속성</h3>
+    <h4>font-family:영문 폰트명,"한글폰트명1",
+        '한글폰트명', "영문폰트명", 웹기본폰트명</h4>
+    <p>웹 기본 폰트 
+    font-family:serif,sans-serif,cursive,fantasy,monospace</p>
+    <h4>font-size:글자크기(pt,px,%,em,vh,vw...단위, 
+        키워드(big,small))</h4>
+    <h4>font-style:normal(보통), italic, oblique(기울임꼴)</h4>
+    <h4>font-style:장평(normal,ultra-condensed,extra-condensed,
+        condensed,semi-condence,semi-expanded,expanded,
+        extra-expanded,ultra-expanded
+    </h4>
+    <h4>font-weight:글꼴두께(normal,bold,bolder,lighter,숫자(100~900,
+        100단위씩, 숫자가 클수록 글자가 두꺼움))</h4>
+    <h4>font-variant:글자변형(normal, small-caps)</h4>
+    <h4>font-kerning:폰트간격(normal, px단위 숫자)</h4>
+    <hr>
+    <h3 class="tit2">글자 관련</h3>
+    <h4>color:글자색(키워드, 16진코드, rgb, hsl)</h4>
+    <h4>direction:글자진행방향(ltr=left to right, rtl=right to left)</h4>
+    
+</body>
+</html>
