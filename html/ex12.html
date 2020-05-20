@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문서연습12</title>
+    <title>문서연습12-css위치관련속성</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
+    <style>
+    /* 초기화 */
+    * { margin: 0; padding: 0;}
+    body, html {width: 100%; min-width: 1200px;  font-family: 'Noto Sans KR', sans-serif;}
+    ul {list-style: none;}
+    a {text-decoration: none; user-select: none;}
+    .tit2 {color : deeppink; position:absolute; width: 50%; top: 30px; font-size: 30px; left: 20%; text-align: center;}
+    /* 공통 스타일 */
+    .wrap { width: 1280px; margin: 0 auto;}
+    /* 헤더 영역 */
+    .hd {width: 100%; height: 100px; position: relative;}
+    .logo { display:block; float:left; margin-top: 20px;}
+    .tnb { float: right; margin-top: 20px;}
+    .tnb li{float: left; margin-left:20px;}
+    .gnb { clear: both; width: 100%; position:absolute; bottom: 0; left: 0;}
+    .gnb li{float: left; width: 20%; }
+    .gnb li a {display:block; color : deeppink; font-size: 20px;
+    text-align: center; height: 42px; line-height: 42px;}
+    .gnb li a:hover { background-color: deepskyblue; color: #fff;}
+    /* border-bottom:2px;(올려놨을때 선이 나옴) */
+    </style>
 </head>
 <body>
     <div class="wrap">
@@ -11,7 +34,7 @@
             <a href="" class="logo">
                 <img src="https://placehold.it/100x45/2c8" alt="logo">
             </a>
-            <h3 class="tit">위치관련 속성</h3>
+            <h3 class="tit2">위치관련 속성</h3>
             <nav class="tnb">
                 <ul>
                     <li><a href="">상단1</a></li>
@@ -38,8 +61,7 @@
                         <span>남성</span>
                     </p>
                 </div>
-                <figure class="sub_vs"><img src="https://placehold.it/
-                    1280x360/333" alt=""></figure>
+                <figure class="sub_vs"><img src="https://placehold.it/1280x360/333" alt=""></figure>
                 <section class="con">
                     <h3 class="sub_tit1">여기는 항목리스트 제목</h3>
                     <ul class="1st">
