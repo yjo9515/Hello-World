@@ -1,0 +1,123 @@
+@charset "utf-8"
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-width: 1200px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            user-select: none;
+        }
+
+        .tit2 {
+            color: deeppink;
+            position: absolute;
+            width: 50%;
+            top: 30px;
+            font-size: 30px;
+            left: 20%;
+            text-align: center;
+        }
+
+        /* 공통 스타일 */
+        .wrap {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        /* 헤더 영역 */
+        .hd {
+            width: 100%;
+            height: 100px;
+            position: relative;
+        }
+
+        .logo {
+            display: block;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .tnb {
+            float: right;
+            margin-top: 20px;
+        }
+
+        .tnb li {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .gnb {
+            clear: both;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .gnb li {
+            float: left;
+            width: 20%;
+        }
+
+        .gnb li a {
+            display: block;
+            color: deeppink;
+            font-size: 20px;
+            text-align: center;
+            height: 42px;
+            line-height: 42px;
+        }
+
+        .gnb li a:hover {
+            background-color: deepskyblue;
+            color: #fff;
+        }
+
+        /* border-bottom:2px;(올려놨을때 선이 나옴) */
+
+        /* 푸터 영역 서식 */
+        .ft {
+            clear: both;
+            width: 100%;
+            margin-top: 10px;
+            border-top: 3px solid #344;
+            background-color: #f33;
+            color: #fff;
+        }
+
+        .ft_wrap,
+        .fnb {
+            clear: both;
+            width: 1280px;
+            margin: 10px auto;
+        }
+
+        .fnb li {
+            float: left;
+            padding: 15px;
+        }
+
+        .fnb li a {
+            color: #fff;
+            font-size: 10px;
+        }
+
+        .ft_wrap {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
