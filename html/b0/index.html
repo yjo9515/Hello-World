@@ -10,6 +10,31 @@
     <link rel="stylesheet" href="b1_sub.css">
     <link rel="stylesheet" href="b1_common.css">
     <style>
+         /* 헤더 영역 */
+        .hd {clear: both; width: 100%;border-bottom: 1px solid #ef402e; box-sizing: border-box;
+    position: relative;
+    height: 120px;}
+        .hd_top_wrap {clear: both; width: 100%; background-color:#f33;}
+        .tnb {float:right; padding-top: 4px;}
+        .tnb span { margin-left: 21px;}
+        .wrap {
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .logo {
+            display: block;
+            float: left;
+            margin-top: 20px;
+        }
+        .sub_vs {margin-bottom: 70px; position: relative; overflow: hidden;}
+        #gnb {    display: block; background-color: #fff;position: absolute;
+            left: 0;bottom: 0;height: 35px; width: 100%;z-index: 1000;}
+        .gnb_de { box-sizing: border-box; border-top: 1px solid #e4eaed; margin: 0 auto; height: 50px; width: 1200px;}
+        .gnb_de ul {    overflow: visible; box-sizing: border-box; height: 50px; }
+        .gnb_de li {float: left; margin-right: 75px;
+        padding-left: 15px; position: relative; }
+        .gnb_de li a:hover{color: #f33;}
+
   
     </style>
 </head>
@@ -17,19 +42,21 @@
 <body>
     <div class="wrap">
         <header class="hd">
+            <div class="hd_top_wrap">
             <a href="" class="logo">
-                <img src="https://placehold.it/100x45/2c8" alt="logo">
-            </a>
-            <h3 class="tit2">더샘</h3> 
+                <img src="https://www.thesaemcosmetic.com/assets/images/common/logo.png" alt="logo">
+            </a> 
             
             <nav class="tnb">
                 <ul>
-                    <li><a href="login.html">로그인</a></li>
-                    <li><a href="cart.html">장바구니</a></li>
-                    <li><a href="mypage.html">mypage</a></li>
+                 <span>로그인</span>
+                 <span>회원가입</span>
+                 <span>고객센터</span>
                 </ul>
             </nav>
-            <nav class="gnb">
+        </div>
+            <nav id="gnb">
+            <nav class="gnb_de">
                 <ul>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="event.html">Event</a></li>
@@ -39,8 +66,7 @@
             </nav>
         </header>
         <main class="content">
-           
-            <figure class="sub_vs"><img src="https://placehold.it/1280x360/333" alt=""></figure>
+            <figure class="sub_vs"><img src="https://www.thesaemcosmetic.com/api/attach/view/3721141378" alt=""></figure>
             <section class="con">
                 <h2>메인 페이지</h2>
 

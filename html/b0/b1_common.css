@@ -50,42 +50,7 @@
             margin-top: 20px;
         }
 
-        .tnb {
-            float: right;
-            margin-top: 20px;
-        }
 
-        .tnb li {
-            float: left;
-            margin-left: 20px;
-        }
-
-        .gnb {
-            clear: both;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        .gnb li {
-            float: left;
-            width: 20%;
-        }
-
-        .gnb li a {
-            display: block;
-            color: deeppink;
-            font-size: 20px;
-            text-align: center;
-            height: 42px;
-            line-height: 42px;
-        }
-
-        .gnb li a:hover {
-            background-color: deepskyblue;
-            color: #fff;
-        }
 
         /* border-bottom:2px;(올려놨을때 선이 나옴) */
 
