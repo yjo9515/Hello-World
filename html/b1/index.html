@@ -5,16 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글로벌 에코 | THESAEM</title>
     <style>
-        .logo {float: left;}
+        /* 초기화 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NS','맑은 고딕','돋움','​dotum',sans-serif;
+    border: 0 none;
+    font-size: 14px;
+    letter-spacing: -1px;
+ 
+}
+
+body,
+html {
+    width: 100%;
+    min-width: 1280px;
+   
+}
+
+ul {
+    list-style: none; display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* 공통 스타일 */
+.wrap {
+    width: 100%;
+}
+
+.hd {
+    clear: both;
+    width: 100%;
+}
+/* 헤더 스타일 */
+
+.hd_top{position: absolute; left: 0;  top: 0; height: 30px;
+    width: 100%;
+    background: #ef402e;
+margin: 0 auto;}
+.hd_top_wrap {box-sizing: border-box;
+    margin: 0 auto;
+    height: 30px;
+    width: 1200px;}
+.tnb {float: right; }
+.right {float: left;}
+.right {padding-top: 6px; overflow: visible; }
+.right li {float: left; }
+.right li a {padding-left: 20px; color: white;}
+.gnb {width: 1280px;
+    margin: 0 auto;
+    position: relative;}
+
+.logo { left: 100px; position: absolute; top: 60px;}
+#search_de {position: absolute; right: 100px; top: 60px;}
+input {
+    -webkit-writing-mode: horizontal-tb ;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    z-index: 5;
+}
+.xi-search { position: absolute; top: 63px; right: 75px; z-index: 10;}
+.hd_bottom_wrap {box-sizing: border-box;
+    margin: 0 auto;
+    height: 120px;
+    width: 1200px; border-bottom: gray; z-index: 500;} 
     </style>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
 </head>
 <body>
-    <div.wrap>
-        <header>
-            <a href="http://127.0.0.1:5500/b1/index.html" class="logo">
-                <img src="https://www.thesaemcosmetic.com/assets/images/common/logo.png" 
-                alt="logo">
-            </a>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_top">
+                <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="right">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="newmember.html">회원가입</a></li>
+                        <li><a href="cart.html">장바구니</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+            <div class="hd_bottom_wrap">
+                <nav class="gnb">
+                    <a href="index.html" class="logo">
+                        <img src="https://www.thesaemcosmetic.com/assets/images/common/logo.png" alt="logo">
+                    </a>
+                    <input type="text" id="search_de" 
+                    name="search_de" placeholder="검색어 입력">
+                    <a href="search.html" id="search">
+                        <i class="xi-search"></i> 
+                    </a>
+                    <ul class="menu">
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                    
+                   
+
+                </nav>
+
+            </div>
+           
+
+
 
         </header>
         <content></content>

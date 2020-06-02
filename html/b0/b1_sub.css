@@ -2,7 +2,8 @@
 
        /* 콘텐츠 영역 서식 */
         .content {
-            clear: both;
+            clear: both; 
+            z-index: 3;
         }
 
         .content:before {

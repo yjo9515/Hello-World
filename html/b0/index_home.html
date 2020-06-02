@@ -10,45 +10,82 @@
     <link rel="stylesheet" href="b1_common.css">
     <link rel="stylesheet" href="b1_sub.css">
     <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    min-width: 1280px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 공통 스타일 */
+.wrap {
+    width: 100%;
+}
+
+.hd {
+    clear: both;
+    width: 100%;
+}
+
          /* 헤더 영역 */
-        .hd {position: absolute; left: 0px; top: 0px; height: 120px; 
-            width: 100%; background: #ef402e;}
-        .hd_top_wrap {clear: both; width: 100%; background-color:white}
-        .tnb {float:right; padding-top: 16px; margin-right: 40px;}
-        .tnb ul li { margin-left: 21px;}
-        .tnb ul li a {color:white;}
+        .hd {position: absolute; left: 0px; top: 0px; height: 90px; 
+            width: 100%; background: #ef402e; z-index: 1;
+        margin: 0 auto;}
+        .hd_top_wrap {margin: 0 auto; padding-left:0; width: 100%; box-sizing: border-box; 
+            border-bottom: rgb(0,0,0); height: 110px;}
+        .tnb {margin: 0 auto; width: auto; position: absolute; right: 60px; top: 0px; }
+        .tnb ul li { margin: 0 auto; margin-left: 21px; z-index: 500;}
+        .tnb ul li a {color:white; z-index: 500;}
         .blank 
         .wrap {
-            width: 1280px;
+            width: 100%;
             margin: 0 auto;
         }
         .logo {
-            display: block;
+            margin-left: 200px;
             float: left;
-            margin-top: 47px;
+            margin-top: 60px;
+            position: absolute;
+            z-index: 100;
+            width: 100%;
         }
         .sub_vs {margin-bottom: 70px; position: relative; overflow: hidden;}
         #gnb {    display: block; background-color: #fff;position: absolute;
-            left: 0;bottom: 0;height: 35px; width: 100%;z-index: 1000;}
-        .gnb_de { font-size: 20px; margin-left: 450px; height: 50px; width: 1200px; }
-        .gnb_de ul {    overflow: visible; box-sizing: border-box; height: 50px; text-align: center;}
+            left: 0;bottom: 0;height: 30px; width: 100%;z-index: 10;}
+        .gnb_de { font-size: 20px; margin-left: 450px; height: 110px; width: 1200px; }
+        .gnb_de ul {   position:absolute;  overflow: visible; box-sizing: border-box; top: 70px; text-align: center; z-index: 5000;}
         .gnb_de li {float: left;  margin-right: 75px;
-        padding-left: 15px; position: relative; }
+        padding-left: 15px; position: relative;  }
         .gnb_de ul li a {color: black;}
         .gnb_de li a:hover{color: #f33;}
 
-        .ft {width: 100%; position: relative; display: block;}
+        .ft {width: 100%; position: absolute; left: 0px; }
         .notice {position:absolute; display: block; width: 100%; border-top: 1px solid #cad3d8; 
             background: #fff;}
-        .notice_de {float: left; margin-left: 20px; color: #000;}
+        .notice_de {width:100%; float: left; margin-left: 20px; color: #000;}
         .fnb {overflow: hidden; width: 100%; border-bottom: 1px solid #4f4f4f; float: right 80px;}
         .social_menu {overflow: hidden;}
+        .width { width: 100%; display: block;}
+        .search { float: right; margin-right: 70px; top: 0;}
 
   
     </style>
 </head>
 
-<body>
+<body class="width">
     <div class="wrap">
         <header class="hd">
             <div class="hd_top_wrap">
@@ -64,9 +101,6 @@
                 
                 </ul>
             </nav>
-            <p class="blank">
-                
-            </p>
         </div>
             <nav id="gnb">
             <nav class="gnb_de">
@@ -77,6 +111,10 @@
 
                 </ul>
             </nav>
+            <div class="search">
+                <input type="text" id="search_de" name="search_de"
+                placeholder="검색어 입력">
+            </div>
         </header>
         <main class="content">
             <figure class="sub_vs"><img src="https://www.thesaemcosmetic.com/api/attach/view/3721142029" alt=""></figure>
