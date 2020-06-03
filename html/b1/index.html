@@ -58,9 +58,13 @@ margin: 0 auto;}
 .right {padding-top: 6px; overflow: visible; }
 .right li {float: left; }
 .right li a {padding-left: 20px; color: white;}
-.gnb {width: 1280px;
+.gnb {width: 1200px;
     margin: 0 auto;
-    position: relative;}
+    position: relative;
+    height: 110px;
+    border-bottom: 1px solid gray;
+
+}
 
 .logo { left: 100px; position: absolute; top: 60px;}
 #search_de {position: absolute; right: 100px; top: 60px;}
@@ -93,9 +97,62 @@ input {
     margin: 0 auto;
     height: 120px;
     width: 1200px; border-bottom: gray; z-index: 500;} 
+.menu { width: 500px; margin: 0 auto; padding-top: 120px; 
+}
+.menu_fl {float: left; padding-left: 50px; font-size: 30px; padding-top: 15px; padding-bottom: 30px;}
+.menu_fl a { color: black;}
+/* 푸터스타일 */
+.ft { clear: both; width: 100%;}
+.ft_top_wrap {background-color: #373737;
+    overflow: hidden;
+    padding-bottom: 30px;
+    width: 100%;}
+.ft_bottom_wrap {clear: both; width: 100%; margin: 0 auto; background-color: #373737; border: 1px solid #4f4f4f;;}
+.ft_menu_wrap { padding-top: 14px; padding-bottom: 14px; width: 400px; height: 50px; margin: 0 auto; }
+.ft_menu_wrap ul li{float: left; font-size: 20px; padding-left: 15px; padding-right: 15px; border-right: 1px solid white;}
+.ft_menu_wrap ul li a {color:white;}
+#ft_last_menu {border-right: none;}
+.company { width: 1200px; overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;}
+.center_info {     overflow: hidden;
+    margin-bottom: 25px;
+    padding-top: 29px;}
+.center_info dl {float: left; margin-left: 30px;}
+.center_info dl dt {display: inline;
+    color: #9a9a9a;
+    font-weight: bold;
+    line-height: 20px; }
+.center_info dl dd {
+    font-family: 'Gotham';
+    font-size: 20px;
+    padding-left: 10px;
+    float: right;
+    color: #9a9a9a;
+}
+.wdo,.wdt {     color: #fff !important;}
+.detail_info { display: block;}
+.detail_info dl {display: inline; padding-left: 30px;}
+.detail_info dl dt {display: inline;
+    color: #9a9a9a;
+    font-size: 13px;}
+.detail_info dl dd {display: inline;
+    color: #9a9a9a;
+    font-size: 13px;}
+.copy {color: #9a9a9a;
+    font-size: 13px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
     </style>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+
 </head>
 <body>
     <div class="wrap">
@@ -122,9 +179,9 @@ input {
                         <i class="xi-search"></i> 
                     </a>
                     <ul class="menu">
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="event.html">Event</a></li>
-                        <li><a href="community.html">Community</a></li>
+                        <li class="menu_fl"><a href="product.html">Product</a></li>
+                        <li class="menu_fl"><a href="event.html">Event</a></li>
+                        <li class="menu_fl"><a href="community.html">Community</a></li>
                     </ul>
                     
                    
@@ -138,7 +195,115 @@ input {
 
         </header>
         <content></content>
-        <footer></footer>
+        <footer class="ft">
+            <div class="ft_top_wrap">
+                <div class="company">
+                    <div class="center_info">
+                        <dl>
+                            <dt>더샘 제품 고객상담</dt>
+                            <dd class="wdo">080-080-7500</dd>
+                        </dl>
+                        <dl>
+                            <dt>온라인 고객상담</dt>
+                            <dd class="wdt">070-8250-2626</dd>
+                        </dl>
+                        <dl>
+                            <dt>평일</dt>
+                            <dd>10:00~17:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>점심시간</dt>
+                            <dd>12:30~13:30</dd>
+                        </dl>
+
+
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>㈜더샘인터내셔널 대표 :</dt>
+                            <dd>이용준, 김중천</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 등록 번호 :</dt>
+                            <dd>102-81-33223</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표번호 :</dt>
+                            <dd>02-3218-7500</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>팩스번호 :</dt>
+                            <dd>02-3218-7590</dd>
+                        </dl>
+                        <dl>
+                            <dt>통신판매신고번호 :</dt>
+                            <dd>제2011-서울종로-1004호 [사업자정보확인]</dd>
+                        </dl>
+                        <dl>
+                            <dt>개인정보관리책임자 :</dt>
+                            <dd>경영지원이사 구경서</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>협력 운영사명 :</dt>
+                            <dd>주식회사 내추럴홈</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표 :</dt>
+                            <dd>황건상, 이영건</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 등록 번호 :</dt>
+                            <dd>120-88-13597</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 송파구 법원로 128 1607호</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>대표번호 :</dt>
+                            <dd>070-4018-2260</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스번호 :</dt>
+                            <dd>070-8233-0720</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
+                        </dl>
+                       
+                    </div>
+                
+
+
+                </div>
+                <nav class="social_menu"></nav>
+
+            </div>
+            <div class="ft_bottom_wrap">
+            <nav class="ft_menu_wrap">
+                <ul class="ft_menu">
+                    <li><a href="center.html">고객센터</a></li>
+                    <li><a href="terms.html">약관</a></li>
+                    <li><a href="info.html">개인정보</a></li>
+                    <li id="ft_last_menu"><a href="use.html">이용안내</a></li>
+                </ul>
+            </nav>
+            <p class="copy">COPYRIGHT BY THE SAEM INTERNATIONAL CO.LTD ALL RIGHTS RESERVED.</p>
+
+            </div>
+
+        </footer>
     </div>
 
 
