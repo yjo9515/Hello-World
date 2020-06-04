@@ -24,13 +24,15 @@ html {
 }
 
 ul {
-    list-style: none; display: block;
+    list-style: none; display: block;  border: 0 none;
 }
 
 a {
     text-decoration: none;
 }
-
+div {
+    display: block;
+}
 
 
 
@@ -97,11 +99,24 @@ input {
     margin: 0 auto;
     height: 120px;
     width: 1200px; border-bottom: gray; z-index: 500;} 
-.menu { width: 500px; margin: 0 auto; padding-top: 120px; 
+.menu { width: 500px; height: 40px; margin: 0 auto; 
+padding-top: 130px; padding-bottom: 130px; 
 }
-.menu_fl {float: left; padding-left: 50px; font-size: 30px; padding-top: 15px; padding-bottom: 30px;}
+.menu_fl {float: left; padding-left: 50px; font-size: 30px; padding-top: 15px; padding-bottom: 30px;
+
+overflow: hidden; }
 .menu_fl a { color: black;}
 .menu_fl a:hover { color: #ef402e;}
+#la:hover { color: #ef402e; cursor: pointer;}
+#tab1 { display: none;}
+#tab1:checked ~ #menu_click { display: block; }
+#menu_click { width: 800px; height: 120px; background-color: #ef402e; margin: auto; 
+display: none;}
+
+
+
+
+
 /* 푸터스타일 */
 .ft { clear: both; width: 100%;}
 .ft_top_wrap {background-color: #373737;
@@ -113,9 +128,9 @@ input {
 .ft_menu_wrap ul li{float: left; font-size: 20px; padding-left: 15px; padding-right: 15px; border-right: 1px solid white;}
 .ft_menu_wrap ul li a {color:white;}
 .ft_menu_wrap ul li:last-child{border-right: none;}
-.company { width: 1200px; overflow: hidden;
+.company { width: 1000px; overflow: hidden;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: auto;
     padding-right: 10px;
     padding-left: 10px;}
 .center_info { overflow: hidden;
@@ -149,6 +164,17 @@ input {
     margin-bottom: 10px;
     text-align: center;
 }
+.social_menu { float: right; position: relative; top: 0px; display: block;}
+.social_menu_list {overflow: hidden; height: 40px; }
+.social_menu ul li {float: left;}
+.social_menu ul li:hover { -moz-transform: translate(0,-40px);
+        -o-transform: translate(0,-40px);
+        -ms-transform: translate(0,-40px);
+        transform: translate(0,-40px); }
+
+
+
+
 
 
     </style>
@@ -180,14 +206,22 @@ input {
                     <a href="search.html" id="search">
                         <i class="xi-search"></i> 
                     </a>
-                    <ul class="menu">
-                        <li class="menu_fl"><a href="product.html">Product</a></li>
+                    <div class="menu_wrap">
+                    <ul class="menu">     
+                        <input type="radio" name="tabs" id="tab1" >
+                        <label for="tab1" id="la" class="menu_fl">Product</label>>               
                         <li class="menu_fl"><a href="event.html">Event</a></li>
                         <li class="menu_fl"><a href="community.html">Community</a></li>
-                    </ul>
-                    
-                   
+                        <div id="menu_click">
 
+                        </div>
+
+
+
+                    </ul>
+                   
+                   
+                    </div>
                 </nav>
 
             </div>
@@ -196,7 +230,9 @@ input {
 
 
         </header>
-        <content></content>
+        <content>
+            <a href=""><img src="https://www.thesaemcosmetic.com/api/attach/view/3721142791" alt=""></a>
+        </content>
         <footer class="ft">
             <div class="ft_top_wrap">
                 <div class="company">
@@ -285,11 +321,20 @@ input {
                         </dl>
                        
                     </div>
-                
+                    <div class="social_menu">
+                        <ul class="social_menu_list">
+                           <li><a href="https://www.facebook.com/thesaem"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_fb.png" alt=""></a></li>
+                           <li><a href="https://twitter.com/thesaem"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_twt.png" alt=""></a></li>
+                           <li><a href="https://www.youtube.com/user/globalcothesaem.png"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_youtu.png
+                             " alt=""></a></li>
+                           <li><a href="https://www.instagram.com/thesaem.official/"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_insta.png" alt=""></a></li>
+                        </ul>
+     
+                     </div>
 
 
                 </div>
-                <nav class="social_menu"></nav>
+              
 
             </div>
             <div class="ft_bottom_wrap">
