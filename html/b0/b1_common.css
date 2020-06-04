@@ -59,8 +59,8 @@
             clear: both;
             width: 100%;
             margin-top: 10px;
-            border-top: 3px solid #344;
-            background-color: #f33;
+            /* border-top: 3px solid #344; */
+            background-color:#373737;
             color: #fff;
         }
 

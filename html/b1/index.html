@@ -1,94 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글로벌 에코 | THESEAM</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" 
-    href="C:\Users\508-16\git\웹기초\Hello-World\html\b1\XEIcon-2.2.0\XEIcon-2.2.0\xeicon.css"
-    >
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
+    <title>글로벌 에코 | THESAEM</title>
     <style>
-  
-    </style>
-</head>
+        /* 초기화 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NS','맑은 고딕','돋움','​dotum',sans-serif;
+    border: 0 none;
+    font-size: 14px;
+    letter-spacing: -1px;
+ 
+}
 
+body,
+html {
+    width: 100%;
+    min-width: 1280px;
+   
+}
+
+ul {
+    list-style: none; display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* 공통 스타일 */
+.wrap {
+    width: 100%;
+}
+
+.hd {
+    clear: both;
+    width: 100%;
+}
+/* 헤더 스타일 */
+
+.hd_top{position: absolute; left: 0;  top: 0; height: 30px;
+    width: 100%;
+    background: #ef402e;
+margin: 0 auto;}
+.hd_top_wrap {box-sizing: border-box;
+    margin: 0 auto;
+    height: 30px;
+    width: 1200px;}
+.tnb {float: right; }
+.right {float: left;}
+.right {padding-top: 6px; overflow: visible; }
+.right li {float: left; }
+.right li a {padding-left: 20px; color: white;}
+.gnb {width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 110px;
+    border-bottom: 1px solid gray;
+
+}
+
+.logo { left: 100px; position: absolute; top: 60px;}
+#search_de {position: absolute; right: 100px; top: 60px;}
+input {
+    -webkit-writing-mode: horizontal-tb ;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    z-index: 5;
+}
+.xi-search { position: absolute; top: 63px; right: 75px; z-index: 10;}
+.hd_bottom_wrap {box-sizing: border-box;
+    margin: 0 auto;
+    height: 120px;
+    width: 1200px; border-bottom: gray; z-index: 500;} 
+.menu { width: 500px; margin: 0 auto; padding-top: 120px; 
+}
+.menu_fl {float: left; padding-left: 50px; font-size: 30px; padding-top: 15px; padding-bottom: 30px;}
+.menu_fl a { color: black;}
+.menu_fl a:hover { color: #ef402e;}
+/* 푸터스타일 */
+.ft { clear: both; width: 100%;}
+.ft_top_wrap {background-color: #373737;
+    overflow: hidden;
+    padding-bottom: 30px;
+    width: 100%;}
+.ft_bottom_wrap {clear: both; width: 100%; margin: 0 auto; background-color: #373737; border: 1px solid #4f4f4f;;}
+.ft_menu_wrap { padding-top: 14px; padding-bottom: 14px; width: 400px; height: 50px; margin: 0 auto; }
+.ft_menu_wrap ul li{float: left; font-size: 20px; padding-left: 15px; padding-right: 15px; border-right: 1px solid white;}
+.ft_menu_wrap ul li a {color:white;}
+.ft_menu_wrap ul li:last-child{border-right: none;}
+.company { width: 1200px; overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;}
+.center_info { overflow: hidden;
+    margin-bottom: 25px;
+    padding-top: 29px;}
+.center_info dl {float: left; margin-left: 30px;}
+.center_info dl dt {display: inline;
+    color: #9a9a9a;
+    font-weight: bold;
+    line-height: 20px; }
+.center_info dl dd {
+    font-family: 'Gotham';
+    font-size: 20px;
+    padding-left: 10px;
+    float: right;
+    color: #9a9a9a;
+}
+.wdo,.wdt {     color: #fff !important;}
+.detail_info { display: block;}
+.detail_info dl {display: inline; padding-left: 30px;}
+.detail_info dl dt {display: inline;
+    color: #9a9a9a;
+    font-size: 13px;}
+.detail_info dl dd {display: inline;
+    color: #9a9a9a;
+    font-size: 13px;}
+.copy {color: #9a9a9a;
+    font-size: 13px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+
+</head>
 <body>
     <div class="wrap">
         <header class="hd">
-            <a href="https://www.thesaemcosmetic.com/page/shopping" class="logo">
-                <img src="https://www.thesaemcosmetic.com/assets/images/common/logo.png" alt="logo">
-            </a>
-            <nav class="tnb">
-                <ul >
-                    <span>로그인</span>
-                    <span>회원가입</span>
-                    <span>고객센터</span>
-                </ul>
-            </nav>
-            <nav class="gnb">
-                <ul >
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="community.html">Community</a></li>
-
-                </ul>
-            </nav>
-            <nav><i class="xi-search"></i></nav>
-
-           
-        </header>
-        <main class="content">
-            <figure class="sub_vs"><img src="https://www.thesaemcosmetic.com/api/attach/view/3721141378" alt=""></figure>
-            <section class="con">
-                <h3 class="sub_tit1">New Arrival</h3>
-                
-                    <ul class="lst">
-                        <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                        <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                        <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                        <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                        <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                       
-
+            <div class="hd_top">
+                <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="right">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="newmember.html">회원가입</a></li>
+                        <li><a href="cart.html">장바구니</a></li>
                     </ul>
-
-                
-                <h3 class="sub_tit2">Best Seller</h3>
+                </nav>
+            </div>
+            </div>
+            <div class="hd_bottom_wrap">
+                <nav class="gnb">
+                    <a href="index.html" class="logo">
+                        <img src="https://www.thesaemcosmetic.com/assets/images/common/logo.png" alt="logo">
+                    </a>
+                    <input type="text" id="search_de" 
+                    name="search_de" placeholder="검색어 입력">
+                    <a href="search.html" id="search">
+                        <i class="xi-search"></i> 
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_fl"><a href="product.html">Product</a></li>
+                        <li class="menu_fl"><a href="event.html">Event</a></li>
+                        <li class="menu_fl"><a href="community.html">Community</a></li>
+                    </ul>
                     
-                <ul class="lst">
-                    <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                    <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                    <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                    <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
-                    <li><a href="product_detail.html"><img src="https://www.thesaemcosmetic.com/view/attach/product/29488/detail/1" alt=""></a></li>
                    
 
-                </ul>
-            </section>
-        </main>
+                </nav>
+
+            </div>
+           
+
+
+
+        </header>
+        <content></content>
         <footer class="ft">
-            <nav class="fnb">
-                <ul>
-                    <li><a href="">고객센터</a></li>
-                    <li><a href="">약관</a></li>
-                    <li><a href="">개인정보취급방침</a></li>
-                    <li><a href="">이용안내</a></li>
+            <div class="ft_top_wrap">
+                <div class="company">
+                    <div class="center_info">
+                        <dl>
+                            <dt>더샘 제품 고객상담</dt>
+                            <dd class="wdo">080-080-7500</dd>
+                        </dl>
+                        <dl>
+                            <dt>온라인 고객상담</dt>
+                            <dd class="wdt">070-8250-2626</dd>
+                        </dl>
+                        <dl>
+                            <dt>평일</dt>
+                            <dd>10:00~17:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>점심시간</dt>
+                            <dd>12:30~13:30</dd>
+                        </dl>
+
+
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>㈜더샘인터내셔널 대표 :</dt>
+                            <dd>이용준, 김중천</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 등록 번호 :</dt>
+                            <dd>102-81-33223</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표번호 :</dt>
+                            <dd>02-3218-7500</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>팩스번호 :</dt>
+                            <dd>02-3218-7590</dd>
+                        </dl>
+                        <dl>
+                            <dt>통신판매신고번호 :</dt>
+                            <dd>제2011-서울종로-1004호 [사업자정보확인]</dd>
+                        </dl>
+                        <dl>
+                            <dt>개인정보관리책임자 :</dt>
+                            <dd>경영지원이사 구경서</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>협력 운영사명 :</dt>
+                            <dd>주식회사 내추럴홈</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표 :</dt>
+                            <dd>황건상, 이영건</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 등록 번호 :</dt>
+                            <dd>120-88-13597</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 송파구 법원로 128 1607호</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>대표번호 :</dt>
+                            <dd>070-4018-2260</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스번호 :</dt>
+                            <dd>070-8233-0720</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
+                        </dl>
+                       
+                    </div>
+                
+
+
+                </div>
+                <nav class="social_menu"></nav>
+
+            </div>
+            <div class="ft_bottom_wrap">
+            <nav class="ft_menu_wrap">
+                <ul class="ft_menu">
+                    <li><a href="center.html">고객센터</a></li>
+                    <li><a href="terms.html">약관</a></li>
+                    <li><a href="info.html">개인정보</a></li>
+                    <li><a href="use.html">이용안내</a></li>
                 </ul>
             </nav>
-            <div class="ft_wrap">
-                <p class="addr">서울특별시 종로구 관철동</p>
-                <p class="copyright">COPYRIGHT BY THE SAEM INTERNATIONAL CO.LTD ALL RIGHTS RESERVED.</p>
+            <p class="copy">COPYRIGHT BY THE SAEM INTERNATIONAL CO.LTD ALL RIGHTS RESERVED.</p>
+
             </div>
+
         </footer>
-
-
     </div>
-</body>
 
-</html>
+
+    
+    
+</body>
+</html> 
