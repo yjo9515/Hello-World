@@ -55,10 +55,11 @@ margin: 0 auto;}
     margin: 0 auto;
     height: 30px;
     width: 1200px;}
-.tnb {position: absolute; width: 230px; height: 40px; top: 0;}
+.tnb {float: right; }
+.right {float: left;}
 .right {padding-top: 6px; overflow: visible; }
 .right li {float: left; }
-.right li a {padding-left: 20px; color: white; display: block;}
+.right li a {padding-left: 20px; color: white;}
 .gnb {width: 1200px;
     margin: 0 auto;
     position: relative;
@@ -105,7 +106,7 @@ padding-top: 130px; padding-bottom: 130px;
 
 overflow: hidden; }
 .menu_fl a { color: black;}
-.menu_fl a:hover { color: #ef402e; }
+.menu_fl a:hover { color: #ef402e;}
 #la:target { display: none;}
 #la:hover { color: #ef402e; cursor: pointer;}
 #tab1 { display: none;}
@@ -220,8 +221,8 @@ cursor: pointer;
                 <div class="hd_top_wrap">
                 <nav class="tnb">
                     <ul class="right">
-                        <li><a href="./Memberlogin.html">로그인</a></li>
-                        <li><a href="./newmember.html">회원가입</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="newmember.html">회원가입</a></li>
                         <li><a href="cart.html">장바구니</a></li>
                     </ul>
                 </nav>
@@ -239,7 +240,7 @@ cursor: pointer;
                     </a>
                     <div class="menu_wrap">
                     <ul class="menu">     
-                        <input type="checkbox" name="tabs" id="tab1" >
+                        <input type="radio" name="tabs" id="tab1" >
                         <label for="tab1" id="la" class="menu_fl">Product</label>               
                         <li class="menu_fl"><a href="event.html">Event</a></li>
                         <li class="menu_fl"><a href="community.html">Community</a></li>
