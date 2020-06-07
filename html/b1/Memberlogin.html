@@ -1,217 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글로벌 에코 | THESAEM</title>
+    <link rel="icon" href="https://www.thesaemcosmetic.com/assets/images/common/favicon_icon.ico">
+    <link rel="stylesheet" href="common.css">
+    <title>로그인  | THESAEM</title>
     <style>
-        /* 초기화 설정 */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'NS','맑은 고딕','돋움','​dotum',sans-serif;
-    border: 0 none;
-    font-size: 14px;
-    letter-spacing: -1px;
- 
-}
-
-body,
-html {
-    width: 100%;
-    min-width: 1280px;
-   
-}
-
-ul {
-    list-style: none; display: block;  border: 0 none;
-}
-
-a {
-    text-decoration: none;
-}
-div {
-    display: block;
-}
+      
+      
 
 
-
-/* 공통 스타일 */
-.wrap {
-    width: 100%;
-}
-
-.hd {
-    clear: both;
-    width: 100%;
-}
-/* 헤더 스타일 */
-
-.hd_top{position: absolute; left: 0;  top: 0; height: 30px;
-    width: 100%;
-    background: #ef402e;
-margin: 0 auto;}
-.hd_top_wrap {box-sizing: border-box;
-    margin: 0 auto;
-    height: 30px;
-    width: 1200px;}
-.tnb {float: right; }
-.right {float: left;}
-.right {padding-top: 6px; overflow: visible; }
-.right li {float: left; }
-.right li a {padding-left: 20px; color: white;}
-.gnb {width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    height: 110px;
-    border-bottom: 1px solid gray;
-
-}
-
-.logo { left: 100px; position: absolute; top: 60px;}
-#search_de {position: absolute; right: 100px; top: 60px;}
-input {
-    -webkit-writing-mode: horizontal-tb ;
-    text-rendering: auto;
-    color: -internal-light-dark-color(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    -webkit-appearance: textfield;
-    background-color: -internal-light-dark-color(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
-    border-image: initial;
-    z-index: 5;
-}
-.xi-search { position: absolute; top: 63px; right: 75px; z-index: 10;}
-.hd_bottom_wrap {box-sizing: border-box;
-    margin: 0 auto;
-    height: 120px;
-    width: 1200px; border-bottom: gray; z-index: 500;} 
-.menu { width: 500px; height: 40px; margin: 0 auto; 
-padding-top: 130px; padding-bottom: 130px; 
-}
-.menu_fl {float: left; padding-left: 50px; font-size: 30px; padding-top: 15px; padding-bottom: 30px;
-
-overflow: hidden; }
-.menu_fl a { color: black;}
-.menu_fl a:hover { color: #ef402e;}
-#la:target { display: none;}
-#la:hover { color: #ef402e; cursor: pointer;}
-#tab1 { display: none;}
-#tab1:checked ~ #menu_click { display: block; }
-#menu_click { width: 1000px; height: 500px; background-color: #ef402e; margin: 50px auto; 
-display: none; position: absolute; top: 140px; left: 100px;}
-#skin_tab { display: none;}
-#other_tab { display: none;}
-
-#skin_de { background-color: white; width: 994px; height: 420px;
-display: none; position: absolute; top: 80px; left: 0px; z-index: 500;
-border: 3px solid gray;}
-#other_de { background-color: white; width: 994px; height: 420px;
-display: none; position: absolute; top: 80px; left: 0px; z-index: 500;
-border: 3px solid gray;}
-
-
-
-
-
-
-
-
-
-
-/* 푸터스타일 */
-.ft { clear: both; width: 100%;}
-.ft_top_wrap {background-color: #373737;
-    overflow: hidden;
-    padding-bottom: 30px;
-    width: 100%;}
-.ft_bottom_wrap {clear: both; width: 100%; margin: 0 auto; background-color: #373737; border: 1px solid #4f4f4f;;}
-.ft_menu_wrap { padding-top: 14px; padding-bottom: 14px; width: 400px; height: 50px; margin: 0 auto; }
-.ft_menu_wrap ul li{float: left; font-size: 20px; padding-left: 15px; padding-right: 15px; border-right: 1px solid white;}
-.ft_menu_wrap ul li a {color:white;}
-.ft_menu_wrap ul li:last-child{border-right: none;}
-.company { width: 1000px; overflow: hidden;
-    box-sizing: border-box;
-    margin: auto;
-    padding-right: 10px;
-    padding-left: 10px;}
-.center_info { overflow: hidden;
-    margin-bottom: 25px;
-    padding-top: 29px;}
-.center_info dl {float: left; margin-left: 30px;}
-.center_info dl dt {display: inline;
-    color: #9a9a9a;
-    font-weight: bold;
-    line-height: 20px; }
-.center_info dl dd {
-    font-family: 'Gotham';
-    font-size: 20px;
-    padding-left: 10px;
-    float: right;
-    color: #9a9a9a;
-}
-.wdo,.wdt {     color: #fff !important;}
-.detail_info { display: block;}
-.detail_info dl {display: inline; padding-left: 30px;}
-.detail_info dl dt {display: inline;
-    color: #9a9a9a;
-    font-size: 13px;}
-.detail_info dl dd {display: inline;
-    color: #9a9a9a;
-    font-size: 13px;}
-.copy {color: #9a9a9a;
-    font-size: 13px;
-    width: 500px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.social_menu { float: right; position: relative; top: 0px; display: block;}
-.social_menu_list {overflow: hidden; height: 40px; }
-.social_menu ul li {float: left;}
-.social_menu ul li:checked { -moz-transform: translate(0,-40px);
-        -o-transform: translate(0,-40px);
-        -ms-transform: translate(0,-40px);
-        transform: translate(0,-40px); }
-
-
- #skin_tab:checked ~ #skin_de { display: block;}
-.skin_de_wrap { z-index: 2000; width: 800px;}
-.skin_de_wrap li {margin: 30px; width: 280px; text-align: left;}
-.skin_de_wrap li a { color: #333; font-size: 30px;}
-#la2:hover {color: white;
-cursor: pointer;
-}
-#la2:checked{color:  white;}
-#la2{color: #ecaca8; }
-#other_tab:checked ~ #other_de { display: block;}
-.other_de_wrap { z-index: 2000; width: 800px;}
-.other_de_wrap li {margin: 30px; width: 280px; text-align: left;}
-.other_de_wrap li a { color: #333; font-size: 30px;}
-#la3:hover {color: white;
-cursor: pointer;
-}
-#la3{color: #ecaca8; }
-
-
-
-
+     
     </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="common.js"></script> -->
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="login.css">
 
 </head>
 <body>
@@ -221,12 +28,12 @@ cursor: pointer;
                 <div class="hd_top_wrap">
                 <nav class="tnb">
                     <ul class="right">
-                        <li><a href="login.html">로그인</a></li>
-                        <li><a href="newmember.html">회원가입</a></li>
+                        <li><a href="./Memberlogin.html">로그인</a></li>
+                        <li><a href="./newmember.html">회원가입</a></li>
                         <li><a href="cart.html">장바구니</a></li>
                     </ul>
                 </nav>
-            </div>
+                </div>
             </div>
             <div class="hd_bottom_wrap">
                 <nav class="gnb">
@@ -240,7 +47,7 @@ cursor: pointer;
                     </a>
                     <div class="menu_wrap">
                     <ul class="menu">     
-                        <input type="radio" name="tabs" id="tab1" >
+                        <input type="checkbox" name="tabs" id="tab1" >
                         <label for="tab1" id="la" class="menu_fl">Product</label>               
                         <li class="menu_fl"><a href="event.html">Event</a></li>
                         <li class="menu_fl"><a href="community.html">Community</a></li>
@@ -260,7 +67,7 @@ cursor: pointer;
                                 </ul>
                             </div>
                             <input type="radio" name="tabs2" id="other_tab">
-                            <label for="other_tab" id="la3" class="menu_fl" class="menu_fl">Other</label>
+                            <label for="other_tab" id="la_3" class="menu_fl" class="menu_fl">Other</label>
                             <div id="other_de">
                                 <ul class="other_de_wrap">
                                     <li><a href="product_de.html">바디</a></li>
@@ -287,9 +94,108 @@ cursor: pointer;
 
 
         </header>
-        <content>
-            <a href=""><img src="https://www.thesaemcosmetic.com/api/attach/view/3721142791" alt=""></a>
-        </content>
+        <section class="content">
+            <div class="login_wrap">
+            <div class="back">
+<img src="https://www.thesaemcosmetic.com/assets/images/membership/bg_login_01.jpg" alt="">
+<div class="tit">
+    <h1>로그인</h1>
+    <p>Membership</p>
+</div>
+            </div>
+            <div class="login">
+                <div class="login_tab">
+                    <ul>
+                    <input type="radio" name="login" id="lo1" checked>
+                    <input type="radio" name="login" id="lo2">
+                    <label for="lo1" id="lla1" class="log_tab">회원 로그인</label>
+                    <label for="lo2" id="lla2" class="log_tab" >비회원 (주문조회)</label>
+               
+                    <div id="memchecked">
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd><input type="text" name="if" title="아이디 입력" ></dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀번호</dt>
+                            <dd><input type="password" name="if" title="비밀번호 입력" ></dd>
+                        </dl>   
+                        <div class="id_che">
+                            <label for="save_id" class="che3">
+                                <input type="checkbox" name="che" id="save_id">
+                                <span class="id_che2">아이디 저장</span>
+                            </label>
+                        </div>
+                        <div class="log_btn">
+                            <button type="submit">로그인</button>
+                        </div>
+                        <div class="bottom">
+                            <div class="new_line">
+                                <p>아직 더샘 회원이 아니신가요?</p>
+                                <a href="Newmember.html">회원가입하기</a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="new_line">
+                                <p>아이디,비밀번호를 잊으셨나요?</p>
+                                <a href="se_id.html">아이디/비밀번호 찾기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="memchecked2">
+                        <dl>
+                            <dt>주문자 명</dt>
+                            <dd><input type="text" name="if" id="txt_box" title="주문자 명 입력" ></dd>
+                        </dl>
+                        <dl>
+                            <dt>휴대폰 번호</dt>
+                            <dd><div>
+                                <span>
+                                    <select title="국번 선택" class="nu_li" id="mo1">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <input type="text" id="mo2" class="nu_li">
+                                </span>
+                                <span><input type="text" id="mo3" class="nu_li"></span>
+                            </div></dd>
+                        </dl>   
+                        <div class="log_btn">
+                            <button type="submit">주문조회</button>
+                        </div>
+                        <div class="bottom">
+                            <div class="new_line">
+                                <p>아직 더샘 회원이 아니신가요?</p>
+                                <a href="Newmember.html">회원가입하기</a>
+                            </div>
+                         
+                        </div>
+
+
+                    </div>
+                 </ul>
+
+
+                </div>
+
+
+            </div>
+
+
+      
+        </div>
+
+
+
+
+        </section>
         <footer class="ft">
             <div class="ft_top_wrap">
                 <div class="company">
@@ -376,24 +282,25 @@ cursor: pointer;
                             <dt>주소 :</dt>
                             <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
                         </dl>
-                       
                     </div>
                     <div class="social_menu">
-                        <ul class="social_menu_list">
-                           <li><a href="https://www.facebook.com/thesaem"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_fb.png" alt=""></a></li>
-                           <li><a href="https://twitter.com/thesaem"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_twt.png" alt=""></a></li>
-                           <li><a href="https://www.youtube.com/user/globalcothesaem.png"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_youtu.png
-                             " alt=""></a></li>
-                           <li><a href="https://www.instagram.com/thesaem.official/"><img src="C:\Users\윤준오\Desktop\더샘이미지\btn_footer_insta.png" alt=""></a></li>
+                        <nav class="social_menu_list">
+                        <ul>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_fb.png" alt=""></a></li>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_twt.png" alt=""></a></li>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_youtu.png" alt=""></a></li>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_insta.png" alt=""></a></li>
                         </ul>
-     
-                     </div>
-
+                        </nav>
+                    </div>       
+                     
+                    
+           
 
                 </div>
-              
-
-            </div>
+            
+           </div>   
+          
             <div class="ft_bottom_wrap">
             <nav class="ft_menu_wrap">
                 <ul class="ft_menu">
@@ -402,6 +309,8 @@ cursor: pointer;
                     <li><a href="info.html">개인정보</a></li>
                     <li><a href="use.html">이용안내</a></li>
                 </ul>
+             
+               
             </nav>
             <p class="copy">COPYRIGHT BY THE SAEM INTERNATIONAL CO.LTD ALL RIGHTS RESERVED.</p>
 
